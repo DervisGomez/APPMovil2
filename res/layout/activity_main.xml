@@ -1,0 +1,1082 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_4"
+    android:gravity="center_vertical"
+    android:paddingBottom="16dp"
+    tools:context="com.app.main.InicioActivity" >
+    
+    
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+            
+            <TabHost
+                android:id="@android:id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                    
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/verde_2" >
+
+                    </TabWidget>
+                    
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:id="@+id/tab1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+							
+                <LinearLayout
+                android:id="@+id/llBuscar"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:orientation="horizontal"
+	            android:layout_marginBottom="8dp" >
+
+	            <EditText
+	                android:id="@+id/etBuscar"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:background="@color/gris_1"
+	                android:hint="@string/et_buscar"
+	                android:inputType="number"
+	                android:textColor="@color/text"
+	                android:paddingLeft="16dp"
+	                android:paddingTop="6dp"
+	                android:paddingBottom="6dp" >
+	            <requestFocus />
+                                </EditText>
+	
+	            <Button
+	                android:id="@+id/btnBuscar"
+	                android:layout_width="60dp"
+	                android:layout_height="38dp"
+	                android:paddingLeft="16dp"
+	                android:background="@color/gris_2"
+	                android:drawableLeft="@drawable/buscar"/>
+	            
+       	 	</LinearLayout>
+                          
+       	 					<ScrollView
+				        android:id="@+id/scrollView1"
+				        android:layout_width="match_parent"
+				        android:layout_height="match_parent" >
+	            	
+       	 					
+         				<LinearLayout
+         				    android:id="@+id/tab11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+							
+         				    <TextView
+         				        android:layout_width="wrap_content"
+         				        android:layout_height="wrap_content"
+         				        android:layout_gravity="center_horizontal"
+         				        android:text="@string/titulo1"
+         				        android:textSize="18dp"
+         				        android:textStyle="bold"
+         				        android:layout_marginBottom="8dp"
+         				        android:textColor="@color/gris_1" />
+         				    
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp" >
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Contrato:" />
+
+                                <EditText
+                                    android:id="@+id/etContrato"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text="">
+                                </EditText>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Nombre:" />
+
+                                <EditText
+                                    android:id="@+id/etNombre"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="CC-Nit:" />
+
+                                <EditText
+                                    android:id="@+id/etCc"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Dirección Contrato:" />
+
+                                <EditText
+                                    android:id="@+id/etDdireccionContrato"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Telefono:" />
+
+                                <EditText
+                                    android:id="@+id/etTelefono"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Atraso:" />
+
+                                <EditText
+                                    android:id="@+id/etAtraso"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Uso:" />
+
+                                <EditText
+                                    android:id="@+id/etUso"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Estrato:" />
+
+                                <EditText
+                                    android:id="@+id/etEstrato"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Saldo:" />
+
+                                <EditText
+                                    android:id="@+id/etSaldo"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Unidades Residenciales:" />
+
+                                <EditText
+                                    android:id="@+id/etUnidadesResidenciales"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Unidades No Residenciales:" />
+
+                                <EditText
+                                    android:id="@+id/etUnidadesNoResidenciales"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+            </LinearLayout>       
+                    </ScrollView>         
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+							 <LinearLayout
+                android:id="@+id/llBuscar2"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:orientation="horizontal"
+	            android:layout_marginBottom="8dp" >
+
+	            <EditText
+	                android:id="@+id/etBuscar2"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:background="@color/gris_1"
+	                android:hint="@string/et_buscar"
+	                android:inputType="number"
+	                android:paddingLeft="16dp"
+	                android:paddingTop="6dp"
+	                android:paddingBottom="6dp" >
+	            <requestFocus />
+                                </EditText>
+	
+	            <Button
+	                android:id="@+id/btnBuscar2"
+	                android:layout_width="60dp"
+	                android:layout_height="38dp"
+	                android:paddingLeft="16dp"
+	                android:background="@color/gris_2"
+	                android:drawableLeft="@drawable/buscar"/>
+	            
+       	 	</LinearLayout>
+                          
+       	 					<ScrollView
+				        android:id="@+id/scrollView2"
+				        android:layout_width="match_parent"
+				        android:layout_height="match_parent" >
+	            	
+       	 					
+         				<LinearLayout
+         				    android:id="@+id/tab21"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+							
+         				    <TextView
+         				        android:layout_width="wrap_content"
+         				        android:layout_height="wrap_content"
+         				        android:layout_gravity="center_horizontal"
+         				        android:text="@string/titulo2"
+         				        android:textSize="18dp"
+         				        android:textStyle="bold"
+         				        android:layout_marginBottom="8dp"
+         				        android:textColor="@color/gris_1" />
+							
+         				    <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text=" Periodo facturacion:" />
+
+                                <EditText
+                                    android:id="@+id/etFactura"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text="">
+
+                                    <requestFocus />
+                                </EditText>
+                            </LinearLayout>
+         				    
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Ciclo de factura" />
+
+                                <EditText
+                                    android:id="@+id/etCicloFactura"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text="">
+
+                                    <requestFocus />
+                                </EditText>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Ciclo de Consumo:" />
+
+                                <EditText
+                                    android:id="@+id/etCicloConsumo"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Dirección de Correspondencia:" />
+
+                                <EditText
+                                    android:id="@+id/etDireccionCorrespondencia"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Ruta de Lectura:" />
+
+                                <EditText
+                                    android:id="@+id/etRutaLectura"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Ruta de Reparto:" />
+
+                                <EditText
+                                    android:id="@+id/etRutaReparto"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            </LinearLayout>
+                           </ScrollView>
+                           
+                          </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+                            
+                        <LinearLayout
+                android:id="@+id/llBuscar3"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:orientation="horizontal"
+	            android:layout_marginBottom="8dp" >
+
+	            <EditText
+	                android:id="@+id/etBuscar3"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:background="@color/gris_1"
+	                android:hint="@string/et_buscar"
+	                android:inputType="number"
+	                android:paddingLeft="16dp"
+	                android:paddingTop="6dp"
+	                android:paddingBottom="6dp" >
+	            <requestFocus />
+                                </EditText>
+	
+	            <Button
+	                android:id="@+id/btnBuscar3"
+	                android:layout_width="60dp"
+	                android:layout_height="38dp"
+	                android:paddingLeft="16dp"
+	                android:background="@color/gris_2"
+	                android:drawableLeft="@drawable/buscar"/>
+	            
+       	 	</LinearLayout>
+                          
+       	 					<ScrollView
+				        android:id="@+id/scrollView3"
+				        android:layout_width="match_parent"
+				        android:layout_height="match_parent" >
+	            	
+       	 					
+         				<LinearLayout
+         				    android:id="@+id/tab31"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+							
+         				    <TextView
+         				        android:layout_width="wrap_content"
+         				        android:layout_height="wrap_content"
+         				        android:layout_gravity="center_horizontal"
+         				        android:text="@string/titulo3"
+         				        android:textSize="18dp"
+         				        android:textStyle="bold"
+         				        android:layout_marginBottom="8dp"
+         				        android:textColor="@color/gris_1" />
+         				    
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Producto Acueducto:" />
+
+                                <EditText
+                                    android:id="@+id/etProductoAcueducto"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text="">
+
+                                    <requestFocus />
+                                </EditText>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Estado Acueducto:" />
+
+                                <EditText
+                                    android:id="@+id/etEstadoAcueducto"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Producto Alcantarillado:" />
+
+                                <EditText
+                                    android:id="@+id/etProductoAlcantarillado"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Estado Alcantarillado:" />
+
+                                <EditText
+                                    android:id="@+id/etEstadoAlcantarillado"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+						</LinearLayout>
+						</ScrollView>
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:id="@+id/tab4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+       	 					
+                             <LinearLayout
+                android:id="@+id/llBuscar4"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:orientation="horizontal"
+	            android:layout_marginBottom="8dp" >
+
+	            <EditText
+	                android:id="@+id/etBuscar4"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:background="@color/gris_1"
+	                android:hint="@string/et_buscar"
+	                android:inputType="number"
+	                android:paddingLeft="16dp"
+	                android:paddingTop="6dp"
+	                android:paddingBottom="6dp" >
+	            <requestFocus />
+                                </EditText>
+	
+	            <Button
+	                android:id="@+id/btnBuscar4"
+	                android:layout_width="60dp"
+	                android:layout_height="38dp"
+	                android:paddingLeft="16dp"
+	                android:background="@color/gris_2"
+	                android:drawableLeft="@drawable/buscar"/>
+	            
+       	 	</LinearLayout>
+                          
+       	 					<ScrollView
+				        android:id="@+id/scrollView4"
+				        android:layout_width="match_parent"
+				        android:layout_height="match_parent" >
+	            	
+       	 					
+         				<LinearLayout
+         				    android:id="@+id/tab41"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+							
+         				    <TextView
+         				        android:layout_width="wrap_content"
+         				        android:layout_height="wrap_content"
+         				        android:layout_gravity="center_horizontal"
+         				        android:text="@string/titulo4"
+         				        android:textSize="18dp"
+         				        android:textStyle="bold"
+         				        android:layout_marginBottom="8dp"
+         				        android:textColor="@color/gris_1" />
+         				    
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Numero Medidor:" />
+
+                                <EditText
+                                    android:id="@+id/etNumeroMedidor"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text="">
+
+                                    <requestFocus />
+                                </EditText>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Serial Medidor:" />
+
+                                <EditText
+                                    android:id="@+id/etSerialMedidor"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Fecha de Instalacion:" />
+
+                                <EditText
+                                    android:id="@+id/etFechaInstalacion"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Tipo del Medidor:" />
+
+                                <EditText
+                                    android:id="@+id/etTipoMedidor"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Totalizador:" />
+
+                                <EditText
+                                    android:id="@+id/etTotalizador"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:editable="false"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:orientation="horizontal"
+                            	android:layout_marginTop="8dp"
+                            	android:layout_marginBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                            		android:layout_height="match_parent"
+	                				android:layout_weight="@string/tv_weight"
+	                				android:paddingTop="6dp"
+	                				android:textSize="@dimen/tv_size"
+	                				android:textColor="@color/gris_1"
+                                    android:text="Serialies medidores hijos:" />
+
+                                <EditText
+                                    android:id="@+id/etMedidoresHijo"
+                            		android:layout_height="match_parent"
+                                    android:layout_width="fill_parent"
+	                				android:layout_weight="@string/et_weight"
+	                				android:background="@drawable/esq1_gris2"
+	                				android:padding="4dp"
+    								android:maxLines="3"
+    								android:isScrollContainer="true"
+							       	android:gravity="left|top"
+							       	android:editable="false"
+							       	android:inputType="textMultiLine" 
+	                				android:text=""/>
+                            </LinearLayout>
+                            
+						</LinearLayout>
+						</ScrollView>
+
+                        </LinearLayout>
+                        
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+
+        </LinearLayout>
+        
+     </LinearLayout>
+
+	<ProgressBar
+	    android:id="@+id/pBar"
+	    style="?android:attr/progressBarStyleLarge"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="100dp"
+	    android:max="100" />
+</RelativeLayout>

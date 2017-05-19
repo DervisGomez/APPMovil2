@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">APPMovil2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo1">DATOS DE USUARIO</string>
+    <string name="titulo2">DATOS FACTURACION</string>
+    <string name="titulo3">DATOS DEL PRODUCTO</string>
+    <string name="titulo4">DATOS DEL MEDIDOR</string>
+    <string name="editable">false</string>
+    <string name="tv_weight">1</string>
+    <string name="et_weight">1</string>
+    <string name="et_buscar">Buscar Contrato</string>
+
+</resources>
